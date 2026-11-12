@@ -1,11 +1,14 @@
 from .command import command
 class parser():
-    def __init__(self):
+    def __init__(self,name):
         self.commands = {}
+        self.name = name
     def add_command(self,name,action,help_text = ""):
         self.commands[name] = command(input,action,help_text)
     def parse(self,input):
-        if input == help:
+        if input == self.name:
+            print(f"{name}, type {name} help for usage")
+        elif input == help:
             help()
             return
         elif input not in self.commands:

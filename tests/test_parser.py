@@ -1,5 +1,5 @@
 from basic_cli.parser import parser
-p = parser()
+p = parser("tester")
 def test_invalid(capsys):
     p.parse("this is invalid")
     captured = capsys.readouterr()
