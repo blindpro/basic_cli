@@ -1,0 +1,14 @@
+*.exe
+*.ogg
+*.vscode/
+*.ini
+*.dat
+*.pk
+pack_creator.nvgt
+Makefile
+*__pycache__/
+*.json
+# Build output
+build/
+dist/
+*.egg-info/
