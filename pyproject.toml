@@ -1,5 +1,5 @@
 [project]
-name = "basic-cli"
+name = "basic-cli-builder"
 version = "0.1.0"
 description = "A simple Python library for creating command-line interfaces."
 readme = "README.md"
