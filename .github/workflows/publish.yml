@@ -38,7 +38,7 @@ jobs:
 
     environment:
       name: pypi
-      url: https://pypi.org/project/basic-cli/
+      url: https://pypi.org/project/basic-cli-builder/
 
     permissions:
       id-token: write
