@@ -1,5 +1,6 @@
 from sys import exit
 from .command import command
+from  . import text_manager as text
 class parser():
     def __init__(self,name):
         self.commands = {}
@@ -8,8 +9,7 @@ class parser():
         self.commands[name] = command(input,action,help_text)
     def parse(self,input):
         input = str(input)
-        parts = input.split(" ")
-        base = parts[0]
+        base = text.get_base(input)
         if base == self.name:
             print(f"{name}, type {name} help for usage")
         elif base == "exit" or input == "quit":
