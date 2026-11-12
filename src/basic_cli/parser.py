@@ -7,17 +7,20 @@ class parser():
     def add_command(self,name,action,help_text = ""):
         self.commands[name] = command(input,action,help_text)
     def parse(self,input):
-        if input == self.name:
+        input = str(input)
+        parts = input.split(" ")
+        base = parts[0]
+        if base == self.name:
             print(f"{name}, type {name} help for usage")
-        elif input == "exit" or input == "quit":
+        elif base == "exit" or input == "quit":
             sys.exit()
-        elif input == help:
+        elif base == help:
             help()
             return
-        elif input not in self.commands:
+        elif base not in self.commands:
             print("invalid command")
         else:
-            to_run = self.commands[input]
+            to_run = self.commands[base]
             to_run.run()
     def help(self):
         print("usage")
