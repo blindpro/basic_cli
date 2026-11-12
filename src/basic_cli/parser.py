@@ -1,3 +1,4 @@
+from sys import exit
 from .command import command
 class parser():
     def __init__(self,name):
@@ -8,6 +9,8 @@ class parser():
     def parse(self,input):
         if input == self.name:
             print(f"{name}, type {name} help for usage")
+        elif input == "exit" or input == "quit":
+            sys.exit()
         elif input == help:
             help()
             return
