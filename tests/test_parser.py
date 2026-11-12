@@ -8,7 +8,7 @@ def test_random(capsys):
     p.parse(26)
     captured = capsys.readouterr()
     assert captured.out == "invalid command\n"
-def greet():
+def greet(args):
     print("hi!")
 p.add_command("greet",greet,"Greets.")
 def test_command_runner(capsys):

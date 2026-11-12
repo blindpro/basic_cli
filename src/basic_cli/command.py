@@ -3,5 +3,5 @@ class command():
         self.name = name
         self.action = action
         self.help_text = help_text
-    def run(self):
-        self.action()
+    def run(self,args):
+        self.action(args)

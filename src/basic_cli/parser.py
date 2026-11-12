@@ -1,6 +1,7 @@
 from sys import exit
 from .command import command
 from  . import text_manager as text
+from .arguments import arguments
 class parser():
     def __init__(self,name):
         self.commands = {}
@@ -20,8 +21,9 @@ class parser():
         elif base not in self.commands:
             print("invalid command")
         else:
+            args =  arguments(input)
             to_run = self.commands[base]
-            to_run.run()
+            to_run.run(args)
     def help(self):
         print("usage")
         for key,value in self.commands.items():
