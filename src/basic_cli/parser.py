@@ -5,9 +5,17 @@ class parser():
     def add_command(self,name,action,help_text = ""):
         self.commands[name] = command(input,action,help_text)
     def parse(self,input):
-        if input not in commands:
+        if input == help:
+            help()
+            return
+        elif input not in commands:
             print("invalid command")
         else:
             to_run = commands[input]
             to_run.run()
+    def help(self):
+        print("usage")
+        for key,value in self.commands.items():
+            print(key)
+            print(value.help_text)
     
