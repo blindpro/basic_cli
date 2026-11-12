@@ -1,19 +1,13 @@
-[build-system]
-requires = ["setuptools>=64"]
-build-backend = "setuptools.build_meta"
-
 [project]
-name = "basic_cli"
-version = "0.1"
-description = "A library for creating cli interfaces."
+name = "basic-cli"
+version = "0.1.0"
+description = "A simple Python library for creating command-line interfaces."
 readme = "README.md"
+license = "GPL-3.0-or-later"
 requires-python = ">=3.9"
+
 authors = [
-    { name = "blindpro", email = "noahbalboa34@gmail.com" },
-]
-dependencies = [
-   
+    { name = "blindpro", email = "noahbalboa34@gmail.com" }
 ]
 
-[tool.setuptools.packages.find]
-where = ["src"]
+dependencies = []
