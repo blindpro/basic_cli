@@ -4,4 +4,4 @@ class command():
         self.action = action
         self.help_text = help_text
     def run(self):
-        action()
+        self.action()
