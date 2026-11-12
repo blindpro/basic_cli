@@ -12,7 +12,7 @@ authors = [
     { name = "blindpro", email = "noahbalboa34@gmail.com" },
 ]
 dependencies = [
-   "accessible_output2",
+   
 ]
 
 [tool.setuptools.packages.find]
